@@ -109,7 +109,7 @@ backdrop-filter: blur( 5.0px );
 }
 /* carousel */
 
-.carousel-item img {
+.carousel-img {
     height: 100vh;
 }
 
@@ -248,7 +248,7 @@ i {
         padding: .5rem 0;
         width: 20rem;
     }
-    .carousel-item .d-block img {
+    .carousel-img {
         height: 50vh;
     }
 }
