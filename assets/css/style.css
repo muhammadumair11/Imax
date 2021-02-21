@@ -141,14 +141,12 @@ backdrop-filter: blur( 5.0px );
 /* card */
 
 .card {
-    background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #434343, #0000007c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #434343, #000000d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #222222;
+    background: radial-gradient(circle, rgba(43, 42, 42, 0.888) 0%, rgba(67,67,67,1) 100%);
 
     border: 4px solid white;
     
-    box-shadow: inset 0px 0px 40px black;
+    box-shadow: inset 0px 0px 60px black;
 }
 .btn-read-more {
     background-color: black;
