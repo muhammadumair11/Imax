@@ -5,7 +5,10 @@ body {
     position: relative;
 
     background-color: #A9A9A9;
+
+    overflow-x: hidden;
 }
+
 
 .bg-box,.bg-box-2 {
     width: 100%;
@@ -103,6 +106,9 @@ backdrop-filter: blur( 5.0px );
 .nav-item a:hover {
     color: #000 !important;
 }
+.nav-item a:active {
+    color: #fff !important;
+}
 .nav-item a:hover::after,.nav-item a:hover::before {
     width: 105%;
     height: 100%;
@@ -132,10 +138,11 @@ backdrop-filter: blur( 5.0px );
     
     outline: none !important;
 }
-.btn-courses:hover {
-    box-shadow: none;
+.btn-courses option {
+    background-color: #2F2F2F;
+    color: white;
 }
-.btn-courses:active {
+.btn-courses:hover {
     box-shadow: none;
 }
 
@@ -152,10 +159,10 @@ backdrop-filter: blur( 5.0px );
 .btn-read-more {
     background-color: black;
     
-    margin: 0 3.5rem;
     padding: .8rem 2rem;
     color: white;
     text-decoration: none !important;
+    border: none;
 
     transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
@@ -196,18 +203,16 @@ backdrop-filter: blur( 5.0px );
 }
 
 .carousel-caption img {
-    width: 30%;
-    height: 30%;
+    width: 8rem;
+    height: 8rem;
     border-radius: 100px;
     margin-top: 2rem
 }
 
 @media(max-width:767px) {
     .carousel-caption img {
-        width: 30%;
-        height: 30%;
-        border-radius: 100px;
-        border-radius: 4rem;
+        width: 5rem;
+        height: 5rem;
     }
 }
 
@@ -235,9 +240,29 @@ i {
 }
 .carousel-control-prev,
 .carousel-control-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 20%;
     transition: none;
     opacity: unset
 }
+
+
+/* Partners */
+.img-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Partners end */
 
 
 
