@@ -59,7 +59,7 @@ body {
     background: rgba( 86, 86, 86, 0.30 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
 }
 /* Navbar */
 
@@ -159,7 +159,8 @@ backdrop-filter: blur( 5.0px );
 .btn-read-more {
     background-color: black;
     
-    padding: .8rem 2rem;
+    padding: .7rem 5rem;
+    margin: 5px 0;
     color: white;
     text-decoration: none !important;
     border: none;
@@ -263,6 +264,28 @@ i {
     background-repeat: no-repeat;
 }
 /* Partners end */
+
+
+/* Form */
+form {
+    margin: 3rem 0;
+    width: 60%;
+}
+input, textarea {
+    width: 100%;
+    border: none;
+    padding: .7rem 1.5rem;
+    outline: none;
+
+    background-color: #222222;
+    color: #fff !important;
+
+    transition: all 500ms;
+}
+input:hover,textarea:hover {
+    box-shadow: none;
+}
+/* Form end */
 
 
 
