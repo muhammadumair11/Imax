@@ -267,11 +267,11 @@ i {
 
 
 /* Form */
-form {
+.message-form {
     margin: 3rem 0;
     width: 60%;
 }
-input, textarea {
+.message-form input,.message-form textarea {
     width: 100%;
     border: none;
     padding: .7rem 1.5rem;
@@ -282,7 +282,7 @@ input, textarea {
 
     transition: all 500ms;
 }
-input:hover,textarea:hover {
+.message-form input:hover,.message-form textarea:hover {
     box-shadow: none;
 }
 /* Form end */
