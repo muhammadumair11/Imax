@@ -1,20 +1,22 @@
 $(document).ready(function () {
-  let input = $(".message-form input, .message-form textarea");
+  let input = $(".formstyle");
   input.keyup(function () {
-    if (input.val() == "") {
-      $(this).css({
-        "background-color": "#222222",
-        color: "#fff",
-        "box-shadow": "inset 0px 0px 35px black",
-        "::placeholder": "#000",
-      });
-    } else {
-      $(this).css({
+    for(let i = 0; i < input.length; i++ ) {
+    if (input.eq(i).val() != "") {
+      $(input.eq(i)).css({
         "background-color": "#fff",
         color: "#000",
         "box-shadow": "none",
         "::placeholder": "#000",
       });
+    } else {
+      $(input.eq(i)).css({
+        "background-color": "#222222",
+        color: "#fff",
+        "box-shadow": "inset 0px 0px 35px black",
+        "::placeholder": "#000",
+      });
     }
+  }
   });
 });
