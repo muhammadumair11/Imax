@@ -8,6 +8,8 @@ body {
     box-shadow: inset 0px 0px 100px black;
     
     overflow-x: hidden;
+
+    scroll-behavior: smooth;
 }
 
 
@@ -48,7 +50,6 @@ body {
     top: 400px;
 }
 
-
 .background {
     margin: 5rem 0;
     padding: 5rem 0;
@@ -57,10 +58,18 @@ body {
     border-bottom: 5px solid black;
     
     color: white !important;
+    
+}
+.background-fill {
+    background-color: #222222;
+    box-shadow: inset 0px 0px 35px black;
+}
+.background-trans {
     background: rgba( 86, 86, 86, 0.30 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.0px );
     -webkit-backdrop-filter: blur( 2.0px );
+
 }
 /* Navbar */
 
@@ -324,6 +333,73 @@ select:-webkit-autofill:focus {
 }
 
 /* Form end */
+
+/* Footer  */
+.footer {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: inset 0px 0px 100px black;
+
+    padding: 4rem 0;
+}
+ul {
+    list-style: none
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+.list-header {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+}
+.footer-list ul li a{
+    color: white !important;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.icons i{
+    font-size: 3rem;
+    padding: 0 5px;
+}
+.footer-list ul li a:hover {
+    color: #A9A9A9 !important;
+}
+.footer-list ul li .facebook:hover {
+    color: #3589EF !important;
+}
+.footer-list ul li .twitter:hover {
+    color: #1DA1F2 !important;
+}
+.footer-list ul li .instagram:hover {
+    background: -webkit-linear-gradient(#fb3958,#125688);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-list ul li .linkedin:hover {
+    color: #2467C2 !important;
+}
+
+
+.side-footer {
+    color: white;
+}
+
+.side-footer h5 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.side-footer p {
+    font-size: .8rem;
+}
+
+/* Footer end */
 
 
 
