@@ -19,4 +19,8 @@ $(document).ready(function () {
     }
   }
   });
+  $('.bar').click(function() {
+    $(".bar").toggleClass('change');
+  })
 });
+
