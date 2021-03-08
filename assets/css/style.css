@@ -204,6 +204,9 @@ backdrop-filter: blur( 5.0px );
 
     transition: all 200ms;
 }
+.broucher {
+    display: block;
+}
 .btn-read-more:hover {
     color: black;
     background-color: white;
@@ -441,5 +444,13 @@ ul {
     }
     .message-form {
         width: 100%;
+    }
+
+    .broucher-card {
+        width: 100% !important;
+    }
+    .broucher-card .btn-read-more {
+        padding: 1rem 2rem;
+        width: 100% !important;
     }
 }
